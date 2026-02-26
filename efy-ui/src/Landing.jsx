@@ -453,12 +453,6 @@ export default function App() {
     >
       {/* Animated Background Elements */}
       <ParallaxBackground />
-      <FloatingElement amplitude={20} duration={4}>
-        <div className="absolute top-20 left-20 w-64 h-64 bg-teal-400/10 rounded-full blur-3xl" />
-      </FloatingElement>
-      <FloatingElement delay={1} amplitude={15} duration={5}>
-        <div className="absolute bottom-40 left-40 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl" />
-      </FloatingElement>
 
       {/* Navbar */}
       <motion.nav
@@ -474,15 +468,20 @@ export default function App() {
         </motion.h1>
 
         <StaggerContainer className="flex gap-8 text-gray-300 font-medium" staggerDelay={0.05}>
-          {["Home", "Pricing", "Integration", "API"].map((item) => (
-            <StaggerItem key={item}>
+          {[
+            { name: "Home", href: "#home" },
+            { name: "Pricing", href: "#pricing" },
+            { name: "Integration", href: "#" },
+            { name: "API", href: "#" }
+          ].map((item) => (
+            <StaggerItem key={item.name}>
               <motion.a
-                href="#"
+                href={item.href}
                 className="hover:text-teal-300 transition"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {item}
+                {item.name}
               </motion.a>
             </StaggerItem>
           ))}
@@ -507,16 +506,31 @@ export default function App() {
 
       {/* Hero Section */}
       <motion.div
+        id="home"
         style={{ scale: heroScale, opacity: heroOpacity }}
-        className="flex justify-center mt-10 relative z-10 pt-12 pb-40"
+        className="flex justify-center mt-10 relative w-full pt-12 pb-40 overflow-hidden"
       >
+        {/* Background Shapes confined to Hero */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, x: 100, y: 100, rotate: -35 }}
+          animate={{ opacity: 1, scale: 1, x: 0, y: 0, rotate: -35 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="absolute -right-[10%] -bottom-[40%] w-[1200px] h-[450px] bg-[#1b7c8d] rounded-full pointer-events-none z-0"
+        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, x: 100, y: 100, rotate: -35 }}
+          animate={{ opacity: 1, scale: 1, x: 0, y: 0, rotate: -35 }}
+          transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
+          className="absolute right-[5%] -bottom-[50%] w-[1200px] h-[450px] bg-[#2ca1ae] rounded-full pointer-events-none z-0"
+        />
+
         <motion.div
           ref={heroRef}
           onMouseMove={onHeroMove}
           onMouseLeave={onHeroLeave}
           variants={itemVariants}
           whileHover={{ boxShadow: "0 0 100px rgba(0,255,200,0.3)" }}
-          className="w-[950px] rounded-3xl border-t border-t-[#1b7c8d] bg-white/5 backdrop-blur-xl py-24 px-16 shadow-[0_0_80px_rgba(0,255,200,0.15)] transition-transform duration-300 will-change-transform"
+          className="w-[950px] rounded-3xl border-t-[3px] border-t-[#1b7c8d] backdrop-blur-[64px] py-24 px-16 shadow-[0_8px_32px_rgba(0,0,0,0.2)] transition-transform duration-300 will-change-transform z-10"
         >
           <motion.h2
             variants={itemVariants}
@@ -676,6 +690,7 @@ export default function App() {
 
       {/* Pricing Calculator Section */}
       <motion.section
+        id="pricing"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
