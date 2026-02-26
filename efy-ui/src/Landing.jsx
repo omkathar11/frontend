@@ -280,7 +280,7 @@ export default function App() {
           <>
             Get{" "}
             <motion.span
-              className="bg-gradient-to-r from-teal-300 to-teal-400 bg-clip-text text-transparent inline-block"
+              className="text-[#6ad8df] inline-block font-semibold"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -294,7 +294,7 @@ export default function App() {
           <>
             Easily{" "}
             <motion.span
-              className="bg-gradient-to-r from-teal-300 to-teal-400 bg-clip-text text-transparent inline-block"
+              className="text-[#6ad8df] inline-block font-semibold"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -308,7 +308,7 @@ export default function App() {
           <>
             Verify any{" "}
             <motion.span
-              className="bg-gradient-to-r from-teal-300 to-teal-400 bg-clip-text text-transparent inline-block"
+              className="text-[#6ad8df] inline-block font-semibold"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -322,7 +322,7 @@ export default function App() {
           <>
             Get the{" "}
             <motion.span
-              className="bg-gradient-to-r from-teal-300 to-teal-400 bg-clip-text text-transparent inline-block"
+              className="text-[#6ad8df] inline-block font-semibold"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -346,14 +346,14 @@ export default function App() {
           variants={inputVariants}
           initial="hidden"
           animate="visible"
-          className="mt-12 flex items-center overflow-hidden rounded-full bg-white/90 shadow-xl"
+          className="mt-12 flex items-center overflow-hidden rounded-bl-[3rem] rounded-br-[3rem] bg-white/90 shadow-xl"
         >
           <input
             type="text"
             placeholder="Enter Company Domain"
             className="flex-1 px-6 py-4 text-gray-700 outline-none"
           />
-          <MagneticButton className="bg-teal-500 px-8 py-4 font-medium text-white transition hover:bg-teal-600">
+          <MagneticButton className="bg-[#2CA1AE] px-8 py-4 font-medium text-white transition hover:bg-[#238A95]">
             Find Email
           </MagneticButton>
         </motion.div>
@@ -366,14 +366,14 @@ export default function App() {
           variants={inputVariants}
           initial="hidden"
           animate="visible"
-          className="mt-12 flex items-center overflow-hidden rounded-full bg-white/90 shadow-xl"
+          className="mt-12 flex items-center overflow-hidden rounded-bl-[3rem] rounded-br-[3rem] bg-white/90 shadow-xl"
         >
           <input
             type="email"
             placeholder="Enter Email Address"
             className="flex-1 px-6 py-4 text-gray-700 outline-none"
           />
-          <MagneticButton className="bg-teal-500 px-8 py-4 font-medium text-white transition hover:bg-teal-600">
+          <MagneticButton className="bg-[#2CA1AE] px-8 py-4 font-medium text-white transition hover:bg-[#238A95]">
             Find Contact
           </MagneticButton>
         </motion.div>
@@ -386,14 +386,14 @@ export default function App() {
           variants={inputVariants}
           initial="hidden"
           animate="visible"
-          className="mt-12 flex items-center overflow-hidden rounded-full bg-white/90 shadow-xl"
+          className="mt-12 flex items-center overflow-hidden rounded-bl-[3rem] rounded-br-[3rem] bg-white/90 shadow-xl"
         >
           <input
             type="email"
             placeholder="Enter Email Address"
             className="flex-1 px-6 py-4 text-gray-700 outline-none"
           />
-          <MagneticButton className="bg-teal-500 px-8 py-4 font-medium text-white transition hover:bg-teal-600">
+          <MagneticButton className="bg-[#2CA1AE] px-8 py-4 font-medium text-white transition hover:bg-[#238A95]">
             Verify Email
           </MagneticButton>
         </motion.div>
@@ -405,7 +405,7 @@ export default function App() {
         variants={inputVariants}
         initial="hidden"
         animate="visible"
-        className="mt-12 flex items-center overflow-hidden rounded-full bg-white/90 shadow-xl"
+        className="mt-12 flex items-center overflow-hidden rounded-bl-[3rem] rounded-br-[3rem] bg-white/90 shadow-xl"
       >
         <input
           type="text"
@@ -417,7 +417,7 @@ export default function App() {
           placeholder="Domain"
           className="flex-1 px-6 py-4 text-gray-700 outline-none"
         />
-        <MagneticButton className="bg-teal-500 px-8 py-4 font-medium text-white transition hover:bg-teal-600">
+        <MagneticButton className="bg-[#2CA1AE] px-8 py-4 font-medium text-white transition hover:bg-[#238A95]">
           Find Email
         </MagneticButton>
       </motion.div>
@@ -449,7 +449,7 @@ export default function App() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#0f4c5c] via-[#0c3f4a] to-[#08323c] text-white"
+      className="relative min-h-screen overflow-hidden bg-[#023e56] text-white"
     >
       {/* Animated Background Elements */}
       <ParallaxBackground />
@@ -498,7 +498,7 @@ export default function App() {
 
           <MagneticButton
             onClick={() => navigate("/signup")}
-            className="bg-white text-teal-800 px-5 py-2 rounded-xl font-medium shadow-md"
+            className="bg-white text-[#0f4c5c] px-5 py-2 rounded-xl font-medium shadow-md"
           >
             Create Account
           </MagneticButton>
@@ -516,7 +516,7 @@ export default function App() {
           onMouseLeave={onHeroLeave}
           variants={itemVariants}
           whileHover={{ boxShadow: "0 0 100px rgba(0,255,200,0.3)" }}
-          className="w-[950px] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-16 shadow-[0_0_80px_rgba(0,255,200,0.15)] transition-transform duration-300 will-change-transform"
+          className="w-[950px] rounded-3xl border-t border-t-[#1b7c8d] bg-white/5 backdrop-blur-xl py-24 px-16 shadow-[0_0_80px_rgba(0,255,200,0.15)] transition-transform duration-300 will-change-transform"
         >
           <motion.h2
             variants={itemVariants}
@@ -531,11 +531,10 @@ export default function App() {
               <StaggerItem key={tab.id}>
                 <motion.span
                   onClick={() => setActiveTab(tab.id)}
-                  className={`cursor-pointer transition ${
-                    activeTab === tab.id
-                      ? "text-teal-300"
-                      : "hover:text-teal-300"
-                  }`}
+                  className={`cursor-pointer transition pb-1 ${activeTab === tab.id
+                    ? "text-[#6ad8df] border-b-2 border-[#6ad8df]"
+                    : "hover:text-[#6ad8df]"
+                    }`}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -652,17 +651,17 @@ export default function App() {
               "Our list cleaning tool verifies the emails",
               "Download the cleaned list & Send emails"
             ].map((text, index) => (
-              <Reveal key={index} direction="right" delay={index * 50}>
+              <Reveal key={index} direction="right" delay={index * 0.1}>
                 <motion.div
                   className="flex items-center gap-6"
                   whileHover={{ x: 10 }}
                   transition={{ duration: 0.2 }}
                 >
                   <motion.div
-                    className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white font-semibold text-lg shadow-md"
+                    className="w-12 h-12 flex items-center justify-center rounded-full bg-[#4182ED] text-white font-semibold text-lg shadow-md"
                     whileHover={{
                       scale: 1.1,
-                      boxShadow: "0 10px 25px rgba(0,100,255,0.4)"
+                      boxShadow: "0 10px 25px rgba(65,130,237,0.4)"
                     }}
                   >
                     {index + 1}
@@ -682,58 +681,55 @@ export default function App() {
         viewport={{ once: true }}
         className="bg-[#f4f6f7] py-24 relative overflow-hidden"
       >
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-stretch">
           {/* LEFT CARD */}
-          <Reveal direction="left">
+          <Reveal direction="up">
             <motion.div
-              className="bg-white rounded-3xl shadow-xl p-10 relative"
+              className="bg-gradient-to-b from-white via-white to-[#abdbdf] rounded-[24px] rounded-br-none shadow-xl p-10 relative border-b-[8px] border-b-[#2da0ad] h-full flex flex-col justify-between"
               whileHover={{
                 y: -10,
-                boxShadow: "0 30px 60px rgba(0,0,0,0.2)"
+                boxShadow: "0 30px 60px rgba(0,0,0,0.1)"
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-2xl font-semibold text-center text-gray-700">
+              <h3 className="text-xl font-semibold text-center text-[#4a5f74]">
                 How many emails do you have?
               </h3>
 
               <motion.div
-                className="mt-8 border-2 border-teal-400 rounded-2xl py-6 text-center text-2xl font-semibold text-gray-600"
-                animate={{ scale: [1, 1.02, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
+                className="mt-6 border border-[#2da0ad] rounded-xl py-4 text-center text-xl font-bold text-[#4a5f74]"
               >
                 <AnimatedCounter from={0} to={2000000} duration={2} />
               </motion.div>
 
-              <div className="mt-8">
+              <div className="mt-8 relative pt-2">
                 <input
                   type="range"
                   min="1000"
                   max="5000000"
                   defaultValue="2000000"
-                  className="w-full accent-teal-600"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#2da0ad]"
                 />
-                <div className="flex justify-between text-gray-500 mt-2 text-sm">
+                <div className="flex justify-between text-[#8b9cac] mt-2 text-xs font-medium">
                   <span>1000</span>
                   <span>5M</span>
                 </div>
               </div>
 
-              <p className="text-center mt-6 text-gray-500 font-medium">
+              <p className="text-center mt-6 text-[#8b9cac] text-sm">
                 or, select an amount...
               </p>
 
-              <div className="grid grid-cols-4 gap-6 mt-6">
-                {["5k","50K","100K","250K","500K","1M","2M","5M"].map((item, index) => (
+              <div className="grid grid-cols-4 gap-4 mt-6">
+                {["5k", "50K", "100K", "250K", "500K", "1M", "2M", "5M"].map((item, index) => (
                   <motion.button
                     key={index}
-                    whileHover={{ scale: 1.05, y: -5 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`rounded-2xl py-6 text-xl font-semibold shadow-md transition ${
-                      item === "2M"
-                        ? "bg-gradient-to-br from-teal-600 to-teal-800 text-white"
-                        : "bg-white text-gray-700 hover:bg-gray-100"
-                    }`}
+                    className={`rounded-2xl py-5 text-xl font-bold shadow-sm transition border ${item === "2M"
+                      ? "bg-[#2da0ad] text-white border-[#2da0ad]"
+                      : "bg-white text-[#2a4563] border-gray-100 hover:border-[#2da0ad]"
+                      }`}
                   >
                     {item}
                   </motion.button>
@@ -743,86 +739,90 @@ export default function App() {
           </Reveal>
 
           {/* RIGHT CARD */}
-          <Reveal direction="right" delay={80}>
+          <Reveal direction="up" delay={0.2}>
             <motion.div
-              className="bg-white rounded-3xl shadow-xl p-10 relative overflow-hidden"
+              className="bg-white rounded-[24px] rounded-br-[64px] shadow-xl pt-10 pb-6 px-10 relative overflow-hidden bg-gradient-to-b from-white via-white to-[#abdbdf] border border-white h-full flex flex-col justify-between"
               whileHover={{
                 y: -10,
-                boxShadow: "0 30px 60px rgba(0,0,0,0.2)"
+                boxShadow: "0 30px 60px rgba(0,0,0,0.1)"
               }}
               transition={{ duration: 0.3 }}
             >
-              <div className="flex justify-between items-center text-sm text-gray-500">
+              <div className="flex items-center gap-3 text-sm text-[#4a5f74] font-medium justify-center whitespace-nowrap">
                 <span>Pay-As-You-Go</span>
-                <motion.span
-                  className="font-semibold text-gray-700"
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  Monthly
-                </motion.span>
+                <div className="w-10 h-5 bg-[#d8ebed] rounded-full relative cursor-pointer flex items-center px-1">
+                  <motion.div className="w-3.5 h-3.5 bg-[#2da0ad] rounded-full absolute right-1" />
+                </div>
+                <span className="text-[#13324f] font-bold">Monthly</span>
               </div>
 
-              <p className="line-through text-gray-400 mt-4 text-center">
-                $800.00
-              </p>
+              <div className="text-center mt-6">
+                <p className="line-through text-[#8b9cac] text-lg font-medium inline-block mr-2">
+                  $800.00
+                </p>
+                <div className="flex flex-col items-center">
+                  <motion.h2
+                    className="text-6xl font-extrabold text-[#113250] tracking-tight -mt-1"
+                  >
+                    $736.00
+                  </motion.h2>
+                  <p className="text-center text-white bg-[#2da0ad] mt-2 text-sm px-3 rounded-full font-medium inline-block mx-auto border border-white">
+                    Save $64.00
+                  </p>
+                </div>
+              </div>
 
-              <motion.h2
-                className="text-5xl font-bold text-center text-teal-800 mt-2"
-                animate={{ scale: [1, 1.02, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                $736.00
-              </motion.h2>
-
-              <p className="text-center text-teal-600 mt-2 font-medium">
-                Save $64.00
-              </p>
-
-              <div className="flex justify-between mt-8 text-center">
-                <div>
+              <div className="flex justify-center items-center w-full mt-6 mb-4 text-[#13324f]">
+                <div className="text-center pr-8 border-r border-[#8b9cac]/30">
+                  <p className="text-sm font-semibold mb-1 uppercase text-[#8b9cac] text-xs tracking-wider">ANNUAL</p>
                   <p className="text-xl font-bold">$736.00</p>
-                  <p className="text-gray-500 text-sm">Credit</p>
+                  <p className="text-[#8b9cac] text-xs">Credit</p>
                 </div>
-                <div>
+                <div className="text-center pl-8">
+                  <p className="text-sm font-semibold mb-1 uppercase text-[#8b9cac] text-xs tracking-wider">MONTHLY</p>
                   <p className="text-xl font-bold">$0.0004</p>
-                  <p className="text-gray-500 text-sm">Cost per credit</p>
+                  <p className="text-[#8b9cac] text-xs">Cost per credit</p>
                 </div>
               </div>
 
-              <MagneticButton className="w-full mt-10 bg-teal-800 text-white py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-teal-900">
+              <MagneticButton className="w-full mt-4 bg-[#113250] text-white py-4 rounded-3xl text-lg font-semibold shadow-lg hover:bg-[#0a233b]">
                 Get Started Free!
               </MagneticButton>
 
-              <p className="text-center text-sm text-gray-500 mt-3">
+              <p className="text-center text-xs text-[#4a5f74] mt-3 font-medium">
                 Includes 100 free credits
               </p>
 
-              <ul className="mt-8 space-y-3 text-gray-600 text-sm">
-                {[
-                  "✔ No Monthly Payments",
-                  "✔ Credits Never Expire",
-                  "✔ No Upfront Fee",
-                  "✔ All Prices Include Taxes And Fees."
-                ].map((feature, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-center gap-2"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {feature}
-                  </motion.li>
-                ))}
-              </ul>
+              <div className="w-full mt-6">
+                <ul className="space-y-3 text-[#2da0ad] text-sm font-medium tracking-tight">
+                  {[
+                    "No Monthly Payments",
+                    "Credits Never Expire",
+                    "No Upfront Fee",
+                    "All Prices Include Taxes And Fees."
+                  ].map((feature, index) => (
+                    <motion.li
+                      key={index}
+                      className="flex items-start gap-2"
+                      whileHover={{ x: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      {feature}
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
 
-              <div className="mt-8 text-center text-sm text-gray-500">
+              <div className="mt-8 text-center text-xs font-bold text-[#113250]">
                 <p>We support</p>
-                <div className="flex justify-center gap-6 mt-4">
-                  {["PayPal", "Visa", "Razorpay", "AmEx"].map((payment, index) => (
+                <div className="flex justify-center gap-2 mt-3 text-xs w-full max-w-[240px] mx-auto">
+                  {["PayPal", "VISA", "stripe", "AMEX"].map((payment, index) => (
                     <motion.span
                       key={index}
-                      className="px-4 py-2 bg-gray-100 rounded-lg"
+                      className="flex-1 py-1.5 bg-white text-[#113250] rounded border border-gray-200 font-bold uppercase"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -841,7 +841,7 @@ export default function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="bg-[#f5f6f7] py-28"
+        className="bg-white py-28 relative overflow-hidden"
       >
         <div className="max-w-5xl mx-auto px-6 text-center">
           <motion.h2
@@ -865,10 +865,32 @@ export default function App() {
           </motion.p>
         </div>
 
-        <Reveal direction="up">
+        <Reveal direction="up" className="relative z-10">
           <FAQAccordion />
         </Reveal>
+
+        {/* Footer Shapes & Background */}
+        <div className="absolute -bottom-40 right-[-10%] w-[60%] h-[400px] bg-[#4caec4] rounded-tl-full opacity-60 pointer-events-none" style={{ transform: "rotate(15deg)" }} />
+        <div className="absolute -bottom-20 right-[-5%] w-[40%] h-[300px] bg-[#0c596b] rounded-tl-full pointer-events-none" style={{ transform: "rotate(10deg)" }} />
       </motion.section>
+
+      {/* Footer / Data Protection Area */}
+      <motion.footer
+        className="relative bg-gradient-to-b from-white via-[#eaf4f5] to-[#c7e5e8] py-20 overflow-hidden"
+      >
+        <div className="text-center text-[#115b6d] font-medium text-sm mt-10">
+          <p>Data Protection Policy</p>
+        </div>
+
+        {/* Floating Chat Button */}
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="fixed bottom-10 right-10 w-14 h-14 bg-[#0c596b] rounded-full shadow-2xl flex items-center justify-center z-50 text-white"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+        </motion.button>
+      </motion.footer>
     </motion.div>
   );
 }
@@ -937,9 +959,8 @@ function FAQAccordion() {
               whileTap={{ scale: 0.99 }}
             >
               <span
-                className={`text-lg font-medium ${
-                  activeIndex === index ? "text-teal-700" : "text-gray-800"
-                }`}
+                className={`text-lg font-medium ${activeIndex === index ? "text-teal-700" : "text-gray-800"
+                  }`}
               >
                 {faq.question}
               </span>
